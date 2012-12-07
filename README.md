@@ -17,10 +17,15 @@ It stores information about the device it's actually talking to in a file called
 When running it the first time, it will perform an inquiry scan to find each device; you select the device from a list, and it will save the information to the text file.
 
 Required Parameters:
+
   /vid=[USB vendor ID of the USB Bluetooth adapter to use]
+  
   /pid=[USB product ID of the USB Bluetooth adapter to use]
+  
   /buddy=[IP address/hostname of the other PC]
+  
   /inport=[TCP port number for incoming connections; should match other PC's outport]
+  
   /outport=[TCP port number for outgoing connections; should match other PC's inport]
 
 Remember to install the LibUsbDotNet filter driver for the USB Bluetooth adapter as well.
